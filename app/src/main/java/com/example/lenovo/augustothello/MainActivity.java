@@ -160,29 +160,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
             score_count();
+
         }
-        //win_status();
+
+       win_status();
         change=false;
-
-
 
     }
 
-//    private void win_status() {
-//        int score_black = Integer.parseInt(score1.toString());
-//        int score_white = Integer.parseInt(score2.toString());
-//        if(score_black+score_white==64){
-//            String a = tv1.toString();
-//            String b = tv2.toString();
-//            if(score_black>score_white){
-//                Toast.makeText(this,a + "Wins",Toast.LENGTH_LONG).show();
-//
-//            }
-//            else{
-//                Toast.makeText(this,b + "Wins",Toast.LENGTH_LONG).show();
-//            }
-//        }
-//    }
+    public void win_status() {
+        int score_black = Integer.parseInt(score1.getText().toString());
+        int score_white = Integer.parseInt(score2.getText().toString());
+        if(score_black+score_white==64){
+            String a = tv1.getText().toString();
+            String b = tv2.getText().toString();
+            if(score_black>score_white){
+                Toast.makeText(this,a + " " + "Wins",Toast.LENGTH_LONG).show();
+
+            }
+            else{
+                Toast.makeText(this,b + " " + "Wins",Toast.LENGTH_LONG).show();
+            }
+        }
+    }
 
     public void score_count() {
         int count1 =0;
