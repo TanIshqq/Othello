@@ -2,9 +2,8 @@
 
 1. It's a basic old school game in which two players play. 
 2. It's similar to reversi.
-3. Click On V/S to start the game
+3. Click On V/S to start the game.
 4.Scoreboard Mintained
-
 
 How To Play:
 so basically first turn is of black.
